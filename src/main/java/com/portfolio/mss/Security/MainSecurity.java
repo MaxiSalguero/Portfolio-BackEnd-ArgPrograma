@@ -2,7 +2,6 @@ package com.portfolio.mss.Security;
 
 import com.portfolio.mss.Security.Jwt.JwtEntryPoint;
 import com.portfolio.mss.Security.Jwt.JwtTokenFilter;
-import com.portfolio.mss.Security.Service.UserDetailsImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
