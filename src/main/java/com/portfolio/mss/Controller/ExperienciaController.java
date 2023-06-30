@@ -14,23 +14,23 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="https://frontendmss.web.app")
 public class ExperienciaController {
     @Autowired IExperienciaService iexperienciaService;
     
-    @GetMapping("experiencia/traer")
+    @GetMapping("/experiencia/traer")
     public List<Experiencia> getExperiencia() {
         return iexperienciaService.getExperiencia();
     }
     
-    @PostMapping("experiencia/crear")
+    @PostMapping("/experiencia/crear")
     public String createExperiencia(@RequestBody Experiencia exp){
         iexperienciaService.saveExperiencia(exp);
         return "La experiencia fue creada correctamente";
     }
     
 
-    @DeleteMapping("experiencia/borrar/{id}")
+    @DeleteMapping("/experiencia/borrar/{id}")
     public String deleteExperiencia(@PathVariable Long id) {
         iexperienciaService.deleteExperiencia(id);
         return "La experiencia fue eliminada correctamente";

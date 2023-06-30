@@ -15,29 +15,29 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="https://frontendmss.web.app")
 public class EducacionController {
     @Autowired IEducacionService ieducacionService;
     
-    @GetMapping("educacion/traer")
+    @GetMapping("/educacion/traer")
     public List<Educacion> getEducacion() {
         return ieducacionService.getEducacion();
     }
     
-    @PostMapping("educacion/crear")
+    @PostMapping("/educacion/crear")
     public String createEducacion(@RequestBody Educacion edu){
         ieducacionService.saveEducacion(edu);
         return "La educacion fue creada correctamente";
     }
     
 
-    @DeleteMapping("educacion/borrar/{id}")
+    @DeleteMapping("/educacion/borrar/{id}")
     public String deleteEducacion(@PathVariable Long id) {
         ieducacionService.deleteEducacion(id);
         return "La educacion fue eliminada correctamente";
     }
     
-    @PutMapping("educacion/editar")
+    @PutMapping("/educacion/editar")
     public void udpEducacion(@RequestBody Educacion edu) {
 	ieducacionService.updEducacion(edu);
 	}

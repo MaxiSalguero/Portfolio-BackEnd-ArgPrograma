@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="https://frontendmss.web.app")
 public class ProyectoController {
     @Autowired IProyectoService iproyectoService;
     
-    @GetMapping("proyecto/traer")
+    @GetMapping("/proyecto/traer")
     public List<Proyecto> getProyecto() {
         return iproyectoService.getProyecto();
     }
@@ -28,20 +28,20 @@ public class ProyectoController {
         return iproyectoService.findProyecto((long)1);
     }
     
-    @PostMapping("proyecto/crear")
+    @PostMapping("/proyecto/crear")
     public String createProyecto(@RequestBody Proyecto proyect){
         iproyectoService.saveProyecto(proyect);
         return "El proyecto fue creado correctamente";
     }
     
 
-    @DeleteMapping("proyecto/borrar/{id}")
+    @DeleteMapping("/proyecto/borrar/{id}")
     public String deleteProyecto(@PathVariable Long id) {
         iproyectoService.deleteProyecto(id);
         return "El proyecto fue eliminado correctamente";
     }
     
-    @PutMapping("proyecto/editar")
+    @PutMapping("/proyecto/editar")
     public void udpProyecto(@RequestBody Proyecto proyect) {
 	iproyectoService.updProyecto(proyect);
 	}

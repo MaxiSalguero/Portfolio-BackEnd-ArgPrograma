@@ -14,6 +14,7 @@ com\portfolio\mss\Service\ImpEducacionService.class
 com\portfolio\mss\Controller\SkillController.class
 com\portfolio\mss\Interface\IExperienciaService.class
 com\portfolio\mss\Entity\Persona.class
+com\portfolio\mss\Security\Controller\RolController.class
 com\portfolio\mss\Security\Dto\JwtDto.class
 com\portfolio\mss\Security\Entity\Rol.class
 com\portfolio\mss\Security\Jwt\JwtProvider.class

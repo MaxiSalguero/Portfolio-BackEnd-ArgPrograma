@@ -9,6 +9,7 @@ C:\Users\Maximiliano\Documents\Portfolio-Back\mss\src\main\java\com\portfolio\ms
 C:\Users\Maximiliano\Documents\Portfolio-Back\mss\src\main\java\com\portfolio\mss\Repository\ISkillRepository.java
 C:\Users\Maximiliano\Documents\Portfolio-Back\mss\src\main\java\com\portfolio\mss\Security\Dto\JwtDto.java
 C:\Users\Maximiliano\Documents\Portfolio-Back\mss\src\main\java\com\portfolio\mss\Security\Repository\IUsuarioRepository.java
+C:\Users\Maximiliano\Documents\Portfolio-Back\mss\src\main\java\com\portfolio\mss\Security\Controller\RolController.java
 C:\Users\Maximiliano\Documents\Portfolio-Back\mss\src\main\java\com\portfolio\mss\Security\Entity\Rol.java
 C:\Users\Maximiliano\Documents\Portfolio-Back\mss\src\main\java\com\portfolio\mss\Entity\Persona.java
 C:\Users\Maximiliano\Documents\Portfolio-Back\mss\src\main\java\com\portfolio\mss\Entity\Experiencia.java
